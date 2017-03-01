@@ -2,4 +2,5 @@
     <string name="app_name">ChamaActivity</string>
     <string name="btn_msg">Chama outra activity</string>
     <string name="btnPessoaA_msg">Envia Objeto de PessoaA com Serializable</string>
+    <string name="btnPessoaB_msg">Envia Objeto de PessoaB com Parcelable</string>
 </resources>

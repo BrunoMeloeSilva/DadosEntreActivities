@@ -35,5 +35,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Button btnPessoaB = (Button) findViewById(R.id.btnPessoaB);
+        btnPessoaB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Tela2Activity.class);
+                i.putExtra("tipo", 3);
+                i.putExtra("PessoaB", new PessoaB("Bruno Silva", 32));
+                startActivity(i);
+                //Envia o objeto da mesma forma, seja com Parcelable ou Serializable.
+            }
+        });
     }
 }

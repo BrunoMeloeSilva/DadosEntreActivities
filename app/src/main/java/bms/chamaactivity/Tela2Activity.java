@@ -29,6 +29,11 @@ public class Tela2Activity extends AppCompatActivity {
 
                 txt.setText(msg);
                 break;
+            case 3:
+                PessoaB pessoaB = i.getParcelableExtra("PessoaB");
+                String msg2 = String.format("Nome %s, idade %d.", pessoaB.getNome(), pessoaB.getIdade());
+                txt.setText(msg2);
+                break;
         }
 
     }
