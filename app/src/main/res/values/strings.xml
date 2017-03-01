@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChamaActivity</string>
+    <string name="btn_msg">Chama outra activity</string>
+</resources>
