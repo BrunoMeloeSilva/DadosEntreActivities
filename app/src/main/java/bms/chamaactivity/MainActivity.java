@@ -18,8 +18,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), Tela2Activity.class);
+                i.putExtra("tipo", 1);
                 i.putExtra("nome", "Bruno Silva");
                 i.putExtra("ocupacao","Pesquisador");
+                startActivity(i);
+            }
+        });
+
+        Button btnPessoaA = (Button) findViewById(R.id.btnPessoaA);
+        btnPessoaA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Tela2Activity.class);
+                i.putExtra("tipo", 2);
+                i.putExtra("PessoaA", new PessoaA("Bruno", 32));
                 startActivity(i);
             }
         });
