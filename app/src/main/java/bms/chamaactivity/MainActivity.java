@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), Tela2Activity.class);
+                i.putExtra("nome", "Bruno Silva");
+                i.putExtra("ocupacao","Pesquisador");
                 startActivity(i);
             }
         });
